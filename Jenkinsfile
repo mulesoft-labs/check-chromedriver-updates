@@ -4,6 +4,8 @@ node {
     }
 
     stage("Execute") {
-        sh("./check.sh")
+        withCredentials([[$class: 'StringBinding', credentialsId: 'slack-webhook', variable: 'SLACK_WEBHOOK']]) {
+            sh("./check.sh")
+        }
     }
 }
