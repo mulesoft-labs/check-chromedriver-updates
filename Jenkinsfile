@@ -1,5 +1,5 @@
 node {
     stage("Check updates") {
-        sh("sh check.sh")
+        sh("check.sh")
     }
 }
