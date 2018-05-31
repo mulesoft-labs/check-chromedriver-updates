@@ -8,5 +8,5 @@ SLACK_PAYLOAD="{\"channel\": \"#$SLACK_CHANNEL\", \"text\": \"New Chromedriver v
 
 if [ "$LATEST_VERSION" != "$CURRENT_CHROMEDRIVER_VERSION" ]; then
     echo "Theres a new chromedriver version: $LATEST_VERSION"
-    curl -s -m 30 -X POST --data-urlencode payload=SLACK_PAYLOAD $SLACK_WEBHOOK
+    curl -s -m 30 -X POST --data-urlencode payload=$SLACK_PAYLOAD $SLACK_WEBHOOK
 fi
