@@ -4,7 +4,6 @@ node {
     }
 
     stage("Execute") {
-        sh("ls -ltrah")
         sh("./check.sh")
     }
 }
