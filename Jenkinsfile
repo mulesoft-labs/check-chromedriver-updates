@@ -4,6 +4,6 @@ node {
     }
 
     stage("Execute") {
-        sh("./check.sh")
+        sh("./check-chromedriver-updates/check.sh")
     }
 }
