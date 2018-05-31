@@ -5,6 +5,6 @@ node {
 
     stage("Execute") {
         sh("ls -l")
-        sh("check.sh")
+        sh("./check.sh")
     }
 }
